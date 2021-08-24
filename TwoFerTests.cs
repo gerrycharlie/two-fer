@@ -1,6 +1,6 @@
 using Xunit;
 
-public class ProgramTests
+public class TwoFerTests
 {
     [Fact]
     public void No_name_given()
@@ -8,21 +8,15 @@ public class ProgramTests
         Assert.Equal("One for you, one for me.", TwoFer.Speak());
     }
     
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void A_name_given()
     {
         Assert.Equal("One for Alice, one for me.", TwoFer.Speak("Alice"));
     }
 
-    [Fact(Skip = "Remove this Skip property to run this test")]
+    [Fact]
     public void Another_name_given()
     {
         Assert.Equal("One for Bob, one for me.", TwoFer.Speak("Bob"));
     }
-
-
-
-
-
-
 }

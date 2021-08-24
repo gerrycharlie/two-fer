@@ -1,12 +1,10 @@
 ﻿using System;
 
-namespace two_fer
+public static class TwoFer
 {
-    class Program
+    public static string Speak(string name = "you")
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        return $"One for {name}, one for me.";
     }
+
 }
